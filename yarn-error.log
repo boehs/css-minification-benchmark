@@ -1,0 +1,102 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\PowerShell\7;D:\Programms\ImageMagick-7.1.1-Q16-HDRI;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\HaxeToolkit\haxe;D:\HaxeToolkit\neko;D:\HaxeToolkit\haxe;D:\HaxeToolkit\neko;D:\HaxeToolkit\hashlink;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\Programms\curl;C:\ProgramData\chocolatey\bin;C:\Users\koteel\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.10;C:\Program Files\PowerShell\7\;D:\Programms\Neovim\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Amazon\AWSCLIV2\;D:\Programms\Tesseract-OCR;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin;C:\Users\koteel\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\Programms\Godot;D:\Programms\pypy;C:\Program Files\GitHub CLI\;D:\Games\Veloren\;D:\Programms\V;C:\HaxeToolkit\haxe;C:\HaxeToolkit\neko;D:\Programms\.jdks\temurin-17;D:\Programms\LLVM\bin;C:\Program Files\WireGuard\;C:\Users\koteel\AppData\Local\pnpm;C:\Users\koteel\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\koteel\AppData\Local\Programs\Python\Python311\;C:\Users\koteel\.cargo\bin;C:\Users\koteel\AppData\Local\pnpm;C:\Users\koteel\scoop\shims;C:\Users\koteel\AppData\Local\Microsoft\WindowsApps;D:\Programms\Microsoft VS Code\bin;C:\tools\neovim\Neovim\bin;C:\Users\koteel\AppData\Local\Programs\oh-my-posh\bin;C:\Users\koteel\AppData\Local\Programs\oh-my-posh\themes;D:\Programms\flutter\bin;C:\Users\koteel\AppData\Local\Android\sdk\platform-tools\;D:\Programms\AndroidSDK\platform-tools;D:\Programms\ngrok;D:\Programms\JetBrains\IntelliJ IDEA Community Edition 2021.3.3\bin;C:\Users\koteel\.dotnet\tools;D:\Programms\JetBrains\PyCharm Community Edition 2022.1.2\bin;c:\users\koteel\appdata\roaming\python\python310\scripts;c:\users\koteel\.local\bin;D:\Programms\msys2\mingw64\bin;D:\ZigToolkit\zls;D:\ZigToolkit\zig;C:\Program Files (x86)\Resource Kit;C:\Program Files\Mono\bin\;C:\Users\koteel\AppData\Local\Programs\Hyper\resources\bin;C:\Users\koteel\AppData\Local\JetBrains\Toolbox\scripts;D:\Programms\nvim\bin;D:\Programms\pngquant;C:\Users\koteel\.deno\bin;C:\Users\koteel\.dotnet\tools;D:\Programms\Ant\bin;D:\Programms\Gradle\bin;C:\Program Files (x86)\BrowserStackLocal\
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EEXIST: file already exists, mkdir 'D:\Desktop\css-minification-benchmark-master\css-minification-benchmark\node_modules\table\node_modules'
+
+npm manifest: 
+  {
+    "name": "css-minification-benchmark",
+    "version": "1.0.0",
+    "description": "Benchmark of popular CSS minification tools.",
+    "author": "Jakub Pawlowicz <jakub@goalsmashers.com>",
+    "homepage": "https://github.com/GoalSmashers/css-minification-benchmark",
+    "license": "MIT",
+    "private": true,
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GoalSmashers/css-minification-benchmark.git"
+    },
+    "bugs": {
+      "url": "https://github.com/GoalSmashers/css-minification-benchmark/issues"
+    },
+    "keywords": [
+      "css",
+      "minification",
+      "benchmark"
+    ],
+    "scripts": {
+      "bench": "node ./bin/bench.js",
+      "bench-html": "node ./bin/bench.js --html>docs/index.html",
+      "check": "npm run lint",
+      "lint": "xo",
+      "test": "npm run lint && npm run bench"
+    },
+    "bin": {
+      "css-minification-benchmark": "bin/bench.js"
+    },
+    "main": "lib/index.js",
+    "devDependencies": {
+      "@parcel/css": "^1.14.0",
+      "clean-css": "^5.3.2",
+      "cssnano": "^6.0.1",
+      "cssnano-preset-advanced": "^6.0.1",
+      "csso": "^5.0.5",
+      "esbuild": "^0.19.2",
+      "gzip-size": "^6.0.0",
+      "picocolors": "^1.0.0",
+      "postcss": "^8.4.29",
+      "q": "^1.5.1",
+      "table": "^6.8.0",
+      "xo": "^0.47.0"
+    },
+    "engines": {
+      "node": ">=12"
+    },
+    "xo": {
+      "space": true,
+      "rules": {
+        "arrow-body-style": "off",
+        "capitalized-comments": "off",
+        "comma-dangle": [
+          "error",
+          "never"
+        ],
+        "new-cap": "off",
+        "no-negated-condition": "off",
+        "object-curly-spacing": [
+          "error",
+          "always"
+        ],
+        "operator-linebreak": [
+          "error",
+          "after"
+        ],
+        "promise/prefer-await-to-then": "off",
+        "quote-props": [
+          "error",
+          "consistent"
+        ],
+        "spaced-comment": "off",
+        "unicorn/prefer-module": "off"
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
